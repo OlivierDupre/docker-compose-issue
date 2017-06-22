@@ -2,9 +2,6 @@ version: '3.1'
 
 services:
   local-portainer:
-    # This line should not be necessary as long as I am using .env name. And indeed, it does nothing in my case...
-    env_file:
-      - .env
     image: portainer/portainer:$PORTAINER_VERSION
     restart: "no"
     ports:
